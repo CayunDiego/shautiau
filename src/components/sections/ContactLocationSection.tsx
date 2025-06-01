@@ -60,8 +60,8 @@ export default function ContactLocationSection() {
             
             <Button 
               asChild 
-              size="lg" 
-              className="bg-cta hover:bg-cta/90 text-cta-foreground font-semibold text-[20.34px] leading-none px-8 py-3 rounded-md shadow-lg w-full sm:w-auto border-t border-[#DA8836] transform transition-transform hover:scale-105"
+              size="lg"       
+              className="bg-cta hover:bg-cta/90 text-cta-foreground font-semibold text-base leading-none px-8 py-3 rounded-md shadow-lg w-full sm:w-auto border-t border-[#DA8836] transform transition-transform hover:scale-105"
             >
               <Link 
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}

@@ -50,7 +50,7 @@ export default function GallerySection() {
         <div className="text-center">
           <Button
             asChild
-            className="bg-cta hover:bg-cta/90 text-cta-foreground font-semibold text-[20.34px] leading-none px-8 py-3 rounded-md shadow-lg transform transition-transform hover:scale-105 border-t border-[#DA8836]"
+            className="bg-cta hover:bg-cta/90 text-cta-foreground font-semibold text-base leading-none px-6 py-3 rounded-md shadow-lg w-full sm:w-auto border-t border-[#DA8836]"
           >
             <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
               Reserva Ahora por WhatsApp

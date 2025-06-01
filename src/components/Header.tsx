@@ -71,7 +71,7 @@ export default function Header() {
 
       {/* Menú desplegable en mobile */}
       {menuOpen && (
-        <div className="md:hidden mt-3 px-4 bg-black/30 backdrop-blur-sm shadow-lg rounded-md space-y-3 pb-4">
+        <div className="md:hidden mt-3 px-4 bg-black/30 backdrop-blur-sm shadow-lg rounded-md space-y-3 py-4">
           <Link href="#alojamiento" className="block text-lg text-[#2F3C40] hover:text-white" onClick={() => setMenuOpen(false)}>Alojamiento</Link>
           <Link href="#servicios" className="block text-lg text-[#2F3C40] hover:text-white" onClick={() => setMenuOpen(false)}>Servicios</Link>
           <Link href="#contact" className="block text-lg text-[#2F3C40] hover:text-white" onClick={() => setMenuOpen(false)}>Contactanos</Link>

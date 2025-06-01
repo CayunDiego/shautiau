@@ -21,7 +21,7 @@ export default function CabinDetailsSection() {
   return (
     <section id="alojamiento" className="pt-16 md:pt-24 bg-background flex flex-col justify-center">
       <div className="container mx-auto px-4 flex flex-col items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-20 md:gap-8 sm:gap-10 w-full max-w-screen-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 w-full max-w-screen-lg">
           {/* 1. Texto: Sobre las cabañas */}
           <div className="flex flex-col justify-start">
             <div className="flex items-center gap-2 mb-4">
@@ -75,7 +75,7 @@ export default function CabinDetailsSection() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-12 items-start pt-20">
+      <div className="flex flex-col gap-12 items-start pt-20 ">
         <div className="container mx-auto px-4 flex flex-col items-center">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-screen-lg'>
             <h2 className="text-[#1F2A2D] font-headline font-bold text-[48px] leading-[100%] tracking-normal mb-4">
@@ -86,8 +86,8 @@ export default function CabinDetailsSection() {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-cols-3 gap-16 mt-10 md:mt-0 md:pt-4 sm:justify-items-center">
-          <div className="md:col-span-2 overflow-hidden aspect-[16/9]">
+        <div className="grid lg:grid-cols-3 mt-10 md:mt-0 md:pt-4 md:gap-8 justify-items-center">
+          <div className="lg:col-span-2 overflow-hidden aspect-[16/9]">
             <img
               src="/images/gallery/cabanas.shautiau 004.png"
               alt="Vista exterior de Cabañas Shautiau en un entorno natural"
@@ -97,7 +97,7 @@ export default function CabinDetailsSection() {
               height={450}
               />
           </div>
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col px-4 lg:px-16 md:justify-center lg:justify-start">
             <p className="font-['Poppins'] text-[18px] tracking-[0%] text-[#1F2A2D] font-medium mb-3" id="servicios">
               🛏️ Cabañas equipadas para tu confort
             </p>
