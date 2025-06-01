@@ -11,6 +11,12 @@ export default function HomePage() {
     <>
       <HeroSection />
       <IntroFeaturesSection />
+      <div
+        className="w-full h-[100px]"
+        style={{
+          background: 'linear-gradient(180deg, #0A0B08 10%, #FFFFFF 100%)',
+        }}
+      ></div>
       <CabinDetailsSection />
       <GallerySection />
       <TestimonialsSection />

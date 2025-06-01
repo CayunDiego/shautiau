@@ -74,12 +74,26 @@ export default function TestimonialsSection() {
       <div className="container mx-auto px-4 relative z-20">
         {/* Section Title & Subtitle */}
         <div className="mb-10 md:mb-16 text-center">
-          <div className="flex items-center justify-center mb-3">
-            <Zap className="w-7 h-7 md:w-8 md:h-8 text-cta transform -scale-x-100" /> {/* Icono izquierdo */}
-            <h2 className="text-3xl sm:text-4xl md:text-[42px] font-headline font-bold text-white tracking-tight mx-3">
+          <div className="flex items-center justify-center mb-3 space-x-2">
+            <Image
+              src="/icons/Lef-icon.svg"
+              alt="Left icon"
+              width={28} // Adjust width and height as needed
+              height={28}
+              className="md:w-8 md:h-8"
+              data-ai-hint="Left decorative icon"
+            />
+            <h2 className="text-3xl sm:text-4xl md:text-[42px] font-headline font-bold text-white tracking-tight">
               ¿Cómo es hospedarse en Shautiau?
             </h2>
-            <Zap className="w-7 h-7 md:w-8 md:h-8 text-cta" /> {/* Icono derecho */}
+            <Image
+              src="/icons/Right-icon.svg"
+              alt="Right icon"
+              width={28} // Adjust width and height as needed
+              height={28}
+              className="md:w-8 md:h-8"
+              data-ai-hint="Right decorative icon"
+            />
           </div>
           <p className="text-base sm:text-lg text-white/90 font-body max-w-2xl mx-auto">
             Ellos te lo cuentan
@@ -90,17 +104,17 @@ export default function TestimonialsSection() {
         <Carousel
           opts={{
             align: "start",
-            loop: testimonialsData.length > 1, 
+            loop: testimonialsData.length > 2, 
           }}
-          className="w-full max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto" // Aumentado el ancho máximo
+          className="w-full max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto" 
         >
           <CarouselContent>
             {testimonialsData.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/1 lg:basis-1/1"> 
-                <div className="p-1 h-full"> {/* Asegurar que el item ocupe altura */}
-                  <div className="flex flex-col items-center text-center p-6 rounded-lg min-h-[280px] justify-between"> {/* min-h y justify-between */}
-                    <div>
-                      <div className="flex items-center mb-4 space-x-3">
+              <CarouselItem key={index} className="md:basis-1/2"> 
+                <div className="p-1 h-full"> 
+                  <div className="flex flex-col items-center text-center p-6 rounded-lg min-h-[280px] justify-between bg-black/30 backdrop-blur-sm shadow-lg"> 
+                    <div className="w-full">
+                      <div className="flex items-center mb-4 space-x-3 justify-center md:justify-start">
                         <Avatar className="w-10 h-10 border-2 border-white/50">
                           <AvatarImage src={testimonial.avatar_url} alt={testimonial.name} />
                           <AvatarFallback className="bg-primary text-primary-foreground">
@@ -139,10 +153,10 @@ export default function TestimonialsSection() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          {testimonialsData.length > 1 && ( 
+          {testimonialsData.length > 2 && ( 
             <>
-              <CarouselPrevious className="text-white border-white/50 hover:bg-white/10 hover:text-white disabled:text-white/30 disabled:border-white/20 -left-2 sm:-left-4 md:-left-8" />
-              <CarouselNext className="text-white border-white/50 hover:bg-white/10 hover:text-white disabled:text-white/30 disabled:border-white/20 -right-2 sm:-right-4 md:-right-8" />
+              <CarouselPrevious className="bg-black/40 text-white border-white/60 hover:bg-black/60 disabled:bg-black/20 disabled:text-white/50 disabled:border-white/30 -left-2 sm:-left-4 md:-left-8" />
+              <CarouselNext className="bg-black/40 text-white border-white/60 hover:bg-black/60 disabled:bg-black/20 disabled:text-white/50 disabled:border-white/30 -right-2 sm:-right-4 md:-right-8" />
             </>
           )}
         </Carousel>

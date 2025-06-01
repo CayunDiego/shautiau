@@ -1,5 +1,5 @@
+
 import { Button } from '@/components/ui/button';
-import { MapPin } from 'lucide-react';
 import Link from 'next/link';
 
 export default function ContactLocationSection() {
@@ -30,30 +30,29 @@ export default function ContactLocationSection() {
 
           {/* Columna Derecha: Información de Contacto */}
           <div className="font-body text-foreground space-y-6 md:space-y-8">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
+            <h2 className="font-headline font-semibold text-[32px] leading-[100%] tracking-normal text-[#1F2A2D]">
               <span role="img" aria-label="calendar" className="mr-2">📅</span>Reservá tu cabaña hoy
             </h2>
 
             <div>
               <div className="flex items-center gap-2 mb-2">
-                <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
-                <h3 className="text-xl font-headline font-semibold text-primary">
-                  Ubicación privilegiada
+                <h3 className="font-headline font-semibold text-base leading-[180%] tracking-normal text-black">
+                  <span aria-label="pin" className="mr-1">📍</span>Ubicación privilegiada
                 </h3>
               </div>
-              <p className="text-muted-foreground text-base leading-relaxed">
+              <p className="font-normal text-base leading-[180%] tracking-normal text-black">
                 Nos encontramos en Av. San Martín 234, Lago Posadas, provincia de Santa Cruz. A pasos del centro del pueblo y con fácil acceso a senderos, lagos color turquesa y el famoso Arco de Piedra.
               </p>
             </div>
 
             <div>
-              <p className="text-base">
-                <span className="font-bold text-foreground">Dirección:</span>{' '}
-                <span className="text-muted-foreground">{direccion}</span>
+              <p className="text-base font-normal leading-[180%] tracking-normal text-black">
+                <span className="font-bold">Dirección:</span>{' '}
+                <span>{direccion}</span>
               </p>
-              <p className="text-base mt-1">
-                <span className="font-bold text-foreground">Teléfono:</span>{' '}
-                <Link href={`tel:${telefono.replace(/\s|-/g, '')}`} className="text-muted-foreground hover:text-primary hover:underline">
+              <p className="text-base mt-1 font-normal leading-[180%] tracking-normal text-black">
+                <span className="font-bold">Teléfono:</span>{' '}
+                <Link href={`tel:${telefono.replace(/\s|-/g, '')}`} className="hover:text-primary hover:underline">
                   {telefono}
                 </Link>
               </p>

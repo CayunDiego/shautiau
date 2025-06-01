@@ -119,3 +119,15 @@
     @apply font-headline text-primary; /* Aplicar fuente de titulares (Poppins) y color primario por defecto */
   }
 }
+
+/* CSS para ajustar el desplazamiento del anclaje */
+#servicios {
+  scroll-margin-top: 43px; /* Altura para mobile por defecto */
+}
+
+@media (min-width: 768px) { /* Usando 768px como breakpoint para desktop */
+  #servicios {
+    scroll-margin-top: 73px; /* Un poco más que la altura de desktop (72.11px) */
+  }
+}
+

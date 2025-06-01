@@ -39,7 +39,7 @@ export default function FinalCtaSection() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Columna Izquierda: Título y Botón */}
           <div className="text-center md:text-left">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-headline font-bold mb-2">
+            <h2 className="text-[48px] font-headline font-semibold leading-tight text-white mb-2 tracking-normal">
               Cabañas Shautiau
             </h2>
             <p className="text-xl md:text-2xl font-body mb-6 md:mb-8 opacity-90">
