@@ -41,12 +41,13 @@ export default function HeroSection() {
           >
             Tu aventura en el sur de Argentina comienza aqui
           </h1>
-          <p className="text-white text-2xl font-body font-light mb-6 md:mb-8 max-w-2xl mx-auto animate-fade-in-up animation-delay-400 leading-snug">
+          <p className="text-white text-2xl font-body font-light mb-6 md:mb-8 max-w-2xl mx-auto animate-fade-in-up animation-delay-400 leading-snug"
+            style={{ textShadow: '0 1px 6px rgba(0, 0, 0, 1)' }}>
             Te invitamos a vivir y disfrutar la experiencia patagónica en nuestras cabañas de troncos y piedras.
           </p>
           <Button
             asChild
-            className="font-semibold text-[20.34px] leading-none bg-cta hover:bg-cta/90 text-cta-foreground border-t border-[#DA8836] animate-fade-in-up animation-delay-600 px-8 py-3 rounded-md shadow-lg transform transition-transform hover:scale-105"
+            className="font-semibold w-full sm:w-auto bg-cta text-base leading-none px-6 py-3 hover:bg-cta/90 text-cta-foreground border-t border-[#DA8836] animate-fade-in-up animation-delay-600 px-8 py-3 rounded-md shadow-lg transform transition-transform hover:scale-105"
           >
             <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
               Reservá ahora por WhatsApp

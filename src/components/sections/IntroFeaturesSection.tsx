@@ -47,7 +47,7 @@ export default function IntroFeaturesSection() {
         
 
         {/* Columna de Texto */}
-        <div className="flex flex-col justify-center text-left order-2 lg:order-none px-4 sm:px-6 md:px-8 lg:pl-0 lg:pr-12 py-12 md:py-20">
+        <div className="flex flex-col justify-center order-2 lg:order-none px-4 sm:px-6 md:px-8 lg:pl-0 lg:pr-12 py-12 md:py-20">
           <h2 
             className="font-headline font-medium italic text-2xl leading-tight text-center text-white mb-8 md:mb-10 max-w-xl mx-auto lg:text-left lg:mx-0"
             style={{ textShadow: '0px 2.3px 25.88px #1F2A2D' }}
@@ -73,7 +73,7 @@ export default function IntroFeaturesSection() {
           <Button 
             asChild 
             size="lg" 
-            className="bg-cta hover:bg-cta/90 text-cta-foreground font-semibold text-[20.34px] leading-none border-t border-[#DA8836] px-8 py-3 rounded-md shadow-lg transform transition-transform hover:scale-105 self-center lg:self-start"
+            className="bg-cta hover:bg-cta/90 text-cta-foreground font-semibold text-base leading-none px-6 py-3 rounded-md shadow-lg w-full sm:w-auto border-t border-[#DA8836]"
           >
             <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
               Reservá Ahora por WhatsApp

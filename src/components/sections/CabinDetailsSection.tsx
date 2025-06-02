@@ -86,7 +86,7 @@ export default function CabinDetailsSection() {
             </p>
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 mt-10 md:mt-0 md:pt-4 md:gap-8 justify-items-center">
+        <div className="grid lg:grid-cols-3 mt-10 md:mt-0 md:pt-4 md:gap-8 justify-items-center lg:pr-4">
           <div className="lg:col-span-2 overflow-hidden aspect-[16/9]">
             <img
               src="/images/gallery/cabanas.shautiau 004.png"
@@ -97,7 +97,7 @@ export default function CabinDetailsSection() {
               height={450}
               />
           </div>
-          <div className="flex flex-col px-4 lg:px-16 md:justify-center lg:justify-start">
+          <div className="flex flex-col justify-center lg:justify-start pt-8 sm:pt-0 px-4 sm:px-0">
             <p className="font-['Poppins'] text-[18px] tracking-[0%] text-[#1F2A2D] font-medium mb-3" id="servicios">
               🛏️ Cabañas equipadas para tu confort
             </p>
