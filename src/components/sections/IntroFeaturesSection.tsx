@@ -11,13 +11,13 @@ const valuePointsData = [
 ];
 
 export default function IntroFeaturesSection() {
-  const whatsappNumber = "5491112345678"; 
+  const whatsappNumber = "5492974194434"; 
   const whatsappMessage = "Hola! Me gustaría hacer una reserva o consultar disponibilidad en Cabañas Shautiau.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section className="bg-background-dark text-foreground-dark overflow-hidden">
-      <div className="container flex flex-col lg:flex-row items-stretch lg:gap-x-12 md:gap-x-16">
+      <div className=" relative lg:static flex flex-col lg:flex-row items-stretch lg:gap-x-12 md:gap-x-16">
         
         {/* Columna de la Imagen */}
         <div className="relative lg:w-auto order-1 lg:order-none pb-12 md:pb-20">
@@ -47,7 +47,7 @@ export default function IntroFeaturesSection() {
         
 
         {/* Columna de Texto */}
-        <div className="flex flex-col justify-center order-2 lg:order-none px-4 sm:px-6 md:px-8 lg:pl-0 lg:pr-12 py-12 md:py-20">
+        <div className="absolute w-full h-full lg:w-auto lg:h-auto lg:static z-10 flex flex-col justify-center items-center lg:items-start lg:justify-end order-2 lg:order-none px-4 sm:px-6 md:px-8 lg:pl-0 lg:pr-12 py-12 md:py-20">
           <h2 
             className="font-headline font-medium italic text-2xl leading-tight text-center text-white mb-8 md:mb-10 max-w-xl mx-auto lg:text-left lg:mx-0"
             style={{ textShadow: '0px 2.3px 25.88px #1F2A2D' }}
@@ -73,7 +73,7 @@ export default function IntroFeaturesSection() {
           <Button 
             asChild 
             size="lg" 
-            className="bg-cta hover:bg-cta/90 text-cta-foreground font-semibold text-base leading-none px-6 py-3 rounded-md shadow-lg w-full sm:w-auto border-t border-[#DA8836]"
+            className="bg-cta hover:bg-cta/90 text-cta-foreground font-semibold text-base leading-none px-6 py-3 rounded-md shadow-lg w-full sm:w-min border-t border-[#DA8836]"
           >
             <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
               Reservá Ahora por WhatsApp

@@ -14,8 +14,8 @@ const finalBenefit =
   'Ideal para familias, parejas y aventureros que buscan un turismo sustentable y auténtico.';
 
 export default function FinalCtaSection() {
-  const whatsappNumber = "5492974194434"; // Consistent with Contact section
-  const whatsappMessage = "Hola! Me gustaría hacer una reserva o consultar disponibilidad en Escapada Shautiau.";
+  const whatsappNumber = "5492974194434";
+  const whatsappMessage = "Hola! Me gustaría hacer una reserva o consultar disponibilidad en Cabañas Shautiau.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (

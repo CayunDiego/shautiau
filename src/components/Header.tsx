@@ -5,8 +5,10 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export default function Header() {
-  const whatsappNumber = "5491112345678";
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hola! Me gustaría consultar sobre Cabañas Shautiau.")}`;
+  const whatsappNumber = "5492974194434";
+  const whatsappMessage = "Hola! Me gustaría hacer una reserva o consultar disponibilidad en Cabañas Shautiau.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);

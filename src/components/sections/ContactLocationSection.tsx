@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function ContactLocationSection() {
   const whatsappNumber = "5492974194434"; 
-  const whatsappMessage = "Hola! Me gustaría hacer una reserva o consultar disponibilidad en Escapada Shautiau.";
+  const whatsappMessage = "Hola! Me gustaría hacer una reserva o consultar disponibilidad en Cabañas Shautiau.";
   const direccion = "Avenida San Martín 234, Z9315 Lago Posadas, Santa Cruz, Argentina";
   const telefono = "+54 9 297 419-4434";
 

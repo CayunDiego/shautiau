@@ -22,7 +22,7 @@ const galleryItems = [
 ];
 
 export default function GallerySection() {
-  const whatsappNumber = "5491112345678"; // Mantener consistencia con otras secciones
+  const whatsappNumber = "5492974194434";
   const whatsappMessage = "Hola! Me gustaría hacer una reserva o consultar disponibilidad en Cabañas Shautiau.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
