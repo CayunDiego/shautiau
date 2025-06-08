@@ -11,7 +11,7 @@ const activities = [
 ];
 
 const finalBenefit =
-  'Ideal para familias, parejas y aventureros que buscan un turismo sustentable y auténtico.';
+  '🌟 Ideal para familias, parejas y aventureros que buscan un turismo sustentable y auténtico.';
 
 export default function FinalCtaSection() {
   const whatsappNumber = "5492974194434";
@@ -66,7 +66,7 @@ export default function FinalCtaSection() {
                 </li>
               ))}
               <li className="flex items-start">
-                <Star className="w-5 h-5 text-yellow-400 fill-yellow-400 mr-2 mt-1 flex-shrink-0" />
+                {/* <Star className="w-5 h-5 text-yellow-400 fill-yellow-400 mr-2 mt-1 flex-shrink-0" /> */}
                 <span>{finalBenefit}</span>
               </li>
             </ul>

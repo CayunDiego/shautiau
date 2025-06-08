@@ -5,8 +5,63 @@ import Footer from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Escapada Shautiau',
-  description: 'Tu refugio perfecto en la naturaleza.',
+  title: 'Cabañas Shautiau',
+  description: 'Tu refugio perfecto en la naturaleza. Disfrutá de Lago Posadas en Santa Cruz, Argentina, con estilo, confort y astroturismo.',
+  keywords: [
+    'hotel',
+    'hostal',
+    'Lago Posadas',
+    'Lago Buenos Aires',
+    'Lago Puyrredon',
+    'Patagonia',
+    'Santa Cruz',
+    'turismo',
+    'naturaleza',
+    'astroturismo',
+    'cabañas',
+    'escapada',
+    'vacaciones',
+  ],
+  authors: [{ name: 'Cabañas Shautiau', url: 'https://shautiau.vercel.app' }],
+  creator: 'Cabañas Shautiau',
+  publisher: 'Cabañas Shautiau',
+  metadataBase: new URL('https://shautiau.vercel.app'),
+  openGraph: {
+    title: 'Cabañas Shautiau',
+    description: 'Tu refugio perfecto en la naturaleza junto al Lago Posadas, con astroturismo y relax en Santa Cruz.',
+    url: 'https://shautiau.vercel.app',
+    siteName: 'Cabañas Shautiau',
+    type: 'website',
+    images: [
+      {
+        url: 'https://shautiau.vercel.app/og-image-shautiau.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Cabañas Shautiau junto al Lago Posadas en Santa Cruz, Patagonia',
+      },
+    ],
+    locale: 'es_AR',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cabañas Shautiau',
+    description: 'Tu refugio perfecto en la naturaleza. Disfrutá del Lago Posadas y noches estrelladas en Santa Cruz.',
+    images: ['https://shautiau.vercel.app/og-image-shautiau.jpg'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
