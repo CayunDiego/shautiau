@@ -22,19 +22,19 @@ export const metadata: Metadata = {
     'escapada',
     'vacaciones',
   ],
-  authors: [{ name: 'Cabañas Shautiau', url: 'www.shautiau.com.ar' }],
+  authors: [{ name: 'Cabañas Shautiau', url: 'https://www.shautiau.com.ar' }],
   creator: 'Cabañas Shautiau',
   publisher: 'Cabañas Shautiau',
-  metadataBase: new URL('www.shautiau.com.ar'),
+  metadataBase: new URL('https://www.shautiau.com.ar'),
   openGraph: {
     title: 'Cabañas Shautiau',
     description: 'Tu refugio perfecto en la naturaleza junto al Lago Posadas, con astroturismo y relax en Santa Cruz.',
-    url: 'www.shautiau.com.ar',
+    url: 'https://www.shautiau.com.ar',
     siteName: 'Cabañas Shautiau',
     type: 'website',
     images: [
       {
-        url: 'www.shautiau.com.ar/og-image-shautiau.jpg',
+        url: 'https://www.shautiau.com.ar/og-image-shautiau.jpg',
         width: 1200,
         height: 630,
         alt: 'Cabañas Shautiau junto al Lago Posadas en Santa Cruz, Patagonia',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Cabañas Shautiau',
     description: 'Tu refugio perfecto en la naturaleza. Disfrutá del Lago Posadas y noches estrelladas en Santa Cruz.',
-    images: ['www.shautiau.com.ar/og-image-shautiau.jpg'],
+    images: ['https://www.shautiau.com.ar/og-image-shautiau.jpg'],
   },
   icons: {
     icon: '/favicon.ico',

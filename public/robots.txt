@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: www.shautiau.com.ar/sitemap.xml
+Sitemap: https://www.shautiau.com.ar/sitemap.xml
