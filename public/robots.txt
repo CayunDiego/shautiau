@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shautiau.vercel.app/sitemap.xml
+Sitemap: www.shautiau.com.ar/sitemap.xml
